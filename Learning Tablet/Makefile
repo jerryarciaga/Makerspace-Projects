@@ -4,9 +4,9 @@
 ##########    Check these every time you start a new project    ##########
 ##########------------------------------------------------------##########
 
-MCU   = atmega168p
-F_CPU = 1000000UL  
-BAUD  = 9600UL
+MCU   = atmega2560
+F_CPU = 16000000UL
+BAUD  = 19200
 ## Also try BAUD = 19200 or 38400 if you're feeling lucky.
 
 ## A directory for common include files and the simple USART library.
@@ -20,9 +20,9 @@ LIBDIR = ../../AVR-Programming-Library
 ##########        (Can override.  See bottom of file.)          ##########
 ##########------------------------------------------------------##########
 
-PROGRAMMER_TYPE = usbtiny
+PROGRAMMER_TYPE = avrisp2
 # extra arguments to avrdude: baud rate, chip type, -F flag, etc.
-PROGRAMMER_ARGS = 	
+PROGRAMMER_ARGS = -P /dev/ttyACM0
 
 ##########------------------------------------------------------##########
 ##########                  Program Locations                   ##########
