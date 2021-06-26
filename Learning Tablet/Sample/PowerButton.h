@@ -17,11 +17,17 @@
 #include <avr/interrupt.h>
 #include <avr/sleep.h>
 
+// On Button
 #define POWER_ON_BUTTON  PD3
 #define ON_BUTTON 18
+#define ON_INTERRUPT INT3
+
+// Off Button
 #define POWER_OFF_BUTTON PD2
 #define OFF_BUTTON 19
+#define OFF_INTERRUPT INT2
 
+#define INTERRUPT_ON_RISING_EDGE 0b11110000
 
 void SetUpPowerButton();
 void TurnOnTablet();
