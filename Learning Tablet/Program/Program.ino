@@ -2,6 +2,8 @@
 #include "TMRpcm.h"
 #include "SPI.h"
 
+#include "PowerButton.h"
+
 TMRpcm X;
 
 int Duck_B_LED     = 22; int Duck_Y_LED    = 23;
